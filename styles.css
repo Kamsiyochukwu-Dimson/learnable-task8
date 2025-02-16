@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #2c3e50;
+    font-family: 'Arial', sans-serif;
+}
+
+.telephone {
+    background: #34495e;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 320px;
+}
+
+.display {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+    min-height: 40px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.num-btn { background: #e67e22; }
+.num-btn:hover { background: #d35400; }
+
+.action-btn {
+    background: #3498db;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#dialBtn { background: #2ecc71; }
+#removeBtn { background: #e74c3c; }
+#clearBtn { background: #95a5a6; }
+
+.output {
+    color: white;
+    background: #2c3e50;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.error { color: #e74c3c; }

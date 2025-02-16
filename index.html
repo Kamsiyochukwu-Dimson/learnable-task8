@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Package</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="telephone">
+        <div class="display" id="display">0</div>
+        
+        <div class="keypad">
+            <button class="btn num-btn" onclick="appendNumber('1')">1</button>
+            <button class="btn num-btn" onclick="appendNumber('2')">2</button>
+            <button class="btn num-btn" onclick="appendNumber('3')">3</button>
+            <button class="btn num-btn" onclick="appendNumber('4')">4</button>
+            <button class="btn num-btn" onclick="appendNumber('5')">5</button>
+            <button class="btn num-btn" onclick="appendNumber('6')">6</button>
+            <button class="btn num-btn" onclick="appendNumber('7')">7</button>
+            <button class="btn num-btn" onclick="appendNumber('8')">8</button>
+            <button class="btn num-btn" onclick="appendNumber('9')">9</button>
+            <button class="btn action-btn" onclick="addNumber()">Add</button>
+            <button class="btn num-btn" onclick="appendNumber('0')">0</button>
+            <button class="btn action-btn" onclick="removeNumber()">Remove</button>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem;">
+            <button class="btn action-btn" id="clearBtn" onclick="clearDisplay()">Clear</button>
+            <button class="btn action-btn" id="dialBtn" onclick="dialNumber()">Dial</button>
+        </div>
+
+        <div class="output" id="output"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
